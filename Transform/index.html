@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .rotate-40deg {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            text-align: center;   
+            transform: rotate(40deg);
+        }
+
+        .top-left {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            transform: rotate(45deg);
+            transform-origin: top left;
+        }
+
+        .container {
+            display: inline-block;
+            border: 2px solid red;
+            margin: 100px;
+            padding: 10px;
+        }
+        
+        .top-right {
+            width: 200px;
+            height: 200px;
+            background-color: slategrey;
+            transform: rotate(45deg);
+            transform-origin: top right;
+        }
+
+        .bottom-left {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            transform: rotate(45deg);
+            transform-origin: bottom left;
+        }
+
+        .bottom-right {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            transform: rotate(45deg);
+            transform-origin: bottom right;
+        }
+
+        .bottom-right-60px {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            transform: rotate(45deg);
+            transform-origin: bottom right 60px;
+        }
+
+        .rotate-50px-50px {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            transform: rotate(45deg);
+            transform-origin: 50px 50px;
+        }
+
+        /* Translate styles */
+        .translate {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            transform: translate(-30px, -20px);
+        }
+
+        /* Scale styles */
+        .scale {
+            width: 200px;
+            height: 200px;
+            background-color: beige;
+            transform: scale(2, 0.5);
+            transform-origin: left top;
+        }
+
+        /* Skew styles */
+        .skew {
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+            transform: skew(20deg, 20deg);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trasform</h1>
+    <h2>1. Rotate</h2>
+    <div class="container">
+        <div class="rotate-40deg">40 darajaga buralgan quti.</div>
+    </div> <hr>
+
+    <h1>Transform origin</h1>
+    <div class="container">
+        <div class="top-left">Top left xossasi</div>
+    </div>
+
+    <div class="container">
+        <div class="top-right">Top right</div>
+    </div>
+
+    <div class="container">
+        <div class="bottom-left">Bottom left</div>
+    </div>
+
+    <div class="container">
+        <div class="bottom-right">Bottom right</div>
+    </div>
+
+    <div class="container">
+        <div class="bottom-right-60px">Bottom right 60px</div>
+    </div>
+
+    <div class="container">
+        <div class="rotate-50px-50px">50px-50px</div>
+    </div> <hr>
+
+    <h2>2. Translate</h2>
+    <div class="container">
+        <div class="translate">Translate qilingan quti</div>
+    </div> <hr>
+
+    <h2>2. Scale</h2>
+    <div class="container">
+        <div class="scale">Kengligi va balandligi o'zgartirilgan quti.</div>
+    </div> <hr>
+
+    <h2>3. Skew</h2>
+    <div class="container">
+        <div class="skew">Vertikal va gorizontal yo'nalishda o'g'dirilgan quti.</div>
+    </div>
+</body>
+</html>

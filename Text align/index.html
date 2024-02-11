@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text align</title>
+    <style>
+        /* vertical-align xossasi */
+        .container {
+            height: 150px;
+            border: 1px solid blue;
+        }
+
+        .container span {
+            display: inline-block;
+            width: 100px;
+            vertical-align: middle;
+        }
+
+        .box-1 {
+            height: 70px;
+            background-color: gray;
+        }
+
+        .box-2 {
+            background-color: darkgoldenrod;
+            height: 90px;
+        }
+
+        .box-3 {
+            background-color: greenyellow;
+            height: 150px;
+        }
+        /* /vertical-align xossasi */
+
+
+        /* float xossasi */
+        .box-4 {
+            width: 100px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .box-5 {
+            width: 120px;
+            height: 50px;
+            background-color: orange;
+            float: right;
+            margin: 5px;
+            padding: 5px;
+            overflow: auto;
+        }
+        /* /float xossasi */
+
+    </style>
+</head>
+<body>
+    <h2>vertical-align xossasi</h2>
+    <div class="container">
+        <span class="box-1">Box 1</span>
+        <span class="box-2">Box 1</span>
+        <span class="box-3">Box 1</span>
+    </div>
+    
+
+    <!-- float xossasi -->
+    <h2>float xossasi</h2>
+    <p>
+        <span class="box-4">Chap tarafga joylashtirilgan element</span>Lorem Ipsum is simply dummy text 
+        of the printing and typesetting industry. Lorem Ipsum has 
+        been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type 
+        specimen book. It has survived not only five centuries, but also the 
+        leap into electronic typesetting, remaining essentially unchanged. 
+        It was popularised in the 1960s with the release of Letraset sheets 
+        containing Lorem Ipsum passages, and more recently with desktop publishing 
+        software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+    <p>
+        <span class="box-5">Chap tarafga joylashtirilgan element</span>Lorem Ipsum is simply dummy text 
+        of the printing and typesetting industry. Lorem Ipsum has 
+        been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type 
+        specimen book. It has survived not only five centuries, but also the 
+        leap into electronic typesetting, remaining essentially unchanged. 
+        It was popularised in the 1960s with the release of Letraset sheets 
+        containing Lorem Ipsum passages, and more recently with desktop publishing 
+        software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <!-- /float xossasi -->
+</body>
+</html>

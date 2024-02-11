@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order, flex-grow, flex-shrink</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .flex-container {
+            display: flex;
+            padding: 15px;
+            background-color: #025955;
+            border-radius: 10px;
+        }
+        
+        .flex-item {
+            margin: 10px;
+            padding: 65px 15px;
+            background-color: #fde8cd;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        
+        /* Order styles */
+        .order-10 {
+            order: 10;
+        }
+        
+        .order-1 {
+            order: 1;
+        }
+
+        .order-minus-2 {
+            order: -2;
+        }
+
+        /* Flex-grow styles */
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-3 {
+            flex-grow: 3;
+        }
+
+        .flex-grow-5 {
+            flex-grow: 5;
+        }
+
+        /* Flex-shrink styles */
+        .width-50 {
+            width: 50%;
+        }
+
+        .flex-shrink-0 {
+            flex-shrink: 0;
+        }
+
+        .flex-shrink-2 {
+            flex-shrink: 2;
+        }
+
+        .flex-shrink-3 {
+            flex-shrink: 3;
+        }
+
+        .flex-shrink-4 {
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order, Flex-grow, Flex-shrink</h1>
+    <h2>1. Order</h2>
+    <!-- Order xossasi orqali flex-elementlarning joylashish ketma-ketligini belgilash mumkin.
+    Orderning qiymatlari musbat va manfiy sonlar. -->
+
+    <!-- <div class="flex-container">
+        <div class="flex-item order-10">Flex item 1 (order-10)</div>
+        <div class="flex-item order-1">Flex item 2 (order-1)</div>
+        <div class="flex-item order-minus-2">Flex item 3(order-minus-2)</div>
+        <div class="flex-item">Flex item 4 (order-0(default))</div>
+    </div> -->
+
+    <h2>2. Flex-grow</h2>
+    <!-- Flex-grow xossasi orqali flex-containerda qolgan bo'sh joyni flex-elementlarga tqsimlash mumkin.
+    Flex-growning qiymatlari 0 va musbat sonlar. -->
+
+    <!-- <div class="flex-container">
+        <div class="flex-item flex-grow-1">Flex item 1</div>
+        <div class="flex-item flex-grow-3">Flex item 2</div>
+        <div class="flex-item flex-grow-5">Flex item 3</div>
+    </div> -->
+
+    <h2>3. Flex-shrink</h2>
+    <!-- Flex-shrink xossasi orqali flex-containerdagi flex-elementlar ko'payib bo'sh joy qolmayotganda
+    elementga kichrayish xususiyatini belgilash mumkin. Uning qiymatlari 0 va musbat sonlar. -->
+
+    <div class="flex-container width-50">
+        <div class="flex-item flex-shrink-0">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item flex-shrink-2">Flex item 3</div>
+        <div class="flex-item flex-shrink-4">Flex item 4</div>
+        <div class="flex-item">Flex item 5</div>
+        <div class="flex-item">Flex item 6</div>
+        <div class="flex-item flex-shrink-3">Flex item 7</div>
+    </div>
+
+</body>
+</html>

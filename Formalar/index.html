@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formalar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formalar</h1>
+    <h3>1-qism</h3>
+    <div class="container">
+        <h2 class="title">Form</h2>
+        <form action="/server.php" method="GET">
+            <label for="firstname">Ism:</label>
+            <input type="text" name="firstname" id="firtsname" placeholder="Ism">
+           
+            <label for="lastname">Familiya:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Familiya">
+        
+            <label for="country">Davlat:</label>
+            <select name="country" id="country">
+                <option value="uzbekistan">O'zbekiston</option>
+                <option value="korea">Koreya</option>
+                <option value="usa">AQSh</option>
+                <option value="russia">Rossiya</option>
+            </select>
+    
+            <label for="message">Xabar:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Xabaringiz..."></textarea>
+    
+            <button type="submit" class="button">Yuborish</button>
+        </form>
+    </div> <hr>
+
+    <h3>2-qism</h3>
+    <h4>Radio buttons</h4>
+    <div class="container-2">
+        <form action="server-php" method="GET">
+            <label for="radio-1" class="form-control__2">Radio 1
+                <input type="radio" checked="checked" name="radio" id="radio-1">
+                <span class="custom-radio"></span>
+            </label>
+            
+            <label for="radio-2" class="form-control__2">Radio 2
+                <input type="radio" name="radio" id="radio-2">
+                <span class="custom-radio"></span>
+            </label>
+
+            <label for="radio-3" class="form-control__2">Radio 3
+                <input type="radio" name="radio" id="radio-3">
+                <span class="custom-radio"></span>
+            </label>
+        </form>
+    </div>
+
+    <h4>Checkboxes</h4>
+    <div class="container-3">
+        <form action="server" method="GET">
+            <label for="checkbox-1" class="form-control__3">Checkbox 1
+                <input type="checkbox" name="checkbox" id="checkbox-1">
+                <span class="custom-checkbox"></span>
+            </label>
+            <label for="checkbox-2" class="form-control__3">Checkbox 2
+                <input type="checkbox" name="checkbox" id="checkbox-2">
+                <span class="custom-checkbox"></span>
+            </label>
+            <label for="checkbox-3" class="form-control__3">Checkbox 3
+                <input type="checkbox" name="checkbox" id="checkbox-3">
+                <span class="custom-checkbox"></span>
+            </label>
+        </form>
+    </div>
+
+    <div class="blank-area"></div>
+</body>
+</html>

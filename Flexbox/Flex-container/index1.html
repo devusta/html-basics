@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            height: 3000px;
+        }
+
+        h2 {
+            border: 1px solid red;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        .flex-container-1 {
+            display: flex;
+            padding: 20px;
+            background-color: #025955;
+            border-radius: 10px;
+        }
+
+        .flex-item {
+            padding: 60px 15px;
+            background-color: #fde8cd;
+            font-weight: bold;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .flex-container-2 {
+            display: flex;
+            background-color: #025;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>1.</h2>
+    <div class="flex-container-1">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+
+    <h2>2.</h2>
+    <div class="flex-container-2">
+        <div class="flex-item">Flex item 1
+            <div class="no-flex-item">Flex item emas</div>
+        </div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+</body>
+</html>

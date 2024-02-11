@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        /* Relativ va Fixed styles */
+        .relative-box {
+            background-color: bisque;
+            position: fixed;
+            top: 100px;
+            right: 0;
+            left: 50px;
+            height: 100px;
+        }
+
+        .static-box {
+            background-color:aqua;
+            height: 50px;
+        }
+
+        .static-box1 {
+            background-color: slategrey;
+            height: 300px; 
+            margin-top: 300px;
+            margin-bottom: 100px;
+        }
+
+        /* Relative qiymat stillari */
+        .relative-box1 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 5px solid red;
+            left: 500px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            border: 5px solid blue;
+            overflow: auto;
+            top: 10px;
+            right: 20px;
+        }
+
+        /* Sticky qiymati stilari */
+        .sticky-box {
+            position: sticky;
+            margin-top: 100px;
+            top: 20px;
+            width: 200px;
+            height: 200px;
+            border: 5px solid red;
+        }                        
+        
+        .high-box {
+            height: 10000px;
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Relativ va Fixed qiymatlari -->
+    <!-- <h1>Relativ va Fixed qiymatlari</h1>
+    <div class="relative-box">Relativ qiymati berilgan</div>
+    <div class="static-box">Oddiy quti(static qiymatga ega)</div>
+    <div class="static-box1">Oddiy quti(static qiymatga ega)</div> -->
+
+    <!-- Absolute qiymatlari -->
+    <!-- <h1>Absolute qiymati</h1>
+    <div class="relative-box1">Bu qutimiz static qiymatdan boshqa qiymatga ega
+        <div class="absolute-box">Bu qutimiz <b>absolute</b> qiymatga ega</div>
+    </div> -->
+
+    <!-- Sticky qiymati -->
+    <h1>Sticky qiymati</h1>
+    <div class="sticky-box">Sticky qiymatiga ega quti</div>
+    <div class="high-box">Katta balandlikka ega quti</div>
+
+</body> 
+</html>

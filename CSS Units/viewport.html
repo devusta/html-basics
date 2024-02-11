@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport</title>
+    <style>
+        /* .box-1 {
+            height: 200px;
+            width: 50vw;
+            padding: 5vw;
+            background-color: darkcyan;
+        } */
+
+        /* .parent-box-2 {
+            width: 50%;
+            background-color: greenyellow;
+            height: 200px;
+        }
+
+        .box-2 {
+            width: 100vw;
+            background-color: yellow;
+            height: 150px;
+        } */
+
+        /* .box-3 {
+            height: 50vh;
+            width: 50vw;
+            background-color: navajowhite;
+        } */
+
+        .box-4 {
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>vw birlikli qiymatlar</h1>
+    <!-- vw(viewport width) birlikli 
+        qiymatlar viewport(qurilma ekrani)ning kengligiga nisabatan hisoblanadi -->
+    <div class="box-1">Viewport birligida ko'rsatilgan qiymatlarga ega quti</div> <hr>
+
+    <div class="parent-box-2">
+        <div class="box-2">
+            Parent box ichidagi quti
+        </div>
+    </div> <hr>
+
+    <h1>vh birlikli qiymatlar</h1>
+    <!-- vh(viewport height) birlikli qiymatlar 
+        viewport(qurilma ekrani)ning balandligiga nisbatan hisoblanadi -->
+    <div class="box-3">Viewport birligi yordamida ko'rsatilgan qiymatlarga ega quti</div> <hr>
+
+    <div class="box-4">Sahifamizning to'liq kengligi va balandligiga ega quti</div>
+    <h1>Quti ostidagi sarlavha</h1>
+
+    <!-- vmin birlikli qiymatlar viewport kengligi va balandligining eng kichigiga nisbatan hisoblanadi -->
+
+    <!-- vmax birlikli qiymatlar viewport kengligi va balandligining eng kattasiga nisbatan hisoblanadi -->
+</body>
+</html>

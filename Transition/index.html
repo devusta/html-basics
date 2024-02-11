@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        h2 {
+            display: inline-block;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            border: 1px solid red;
+
+        }
+
+        .transition-box-1 {
+            transition: width 2s;
+        }
+
+        .transition-box-1:hover {
+            width: 400px;
+        }
+
+        .transition-box-2 {
+            transition: width 2s, background-color 4s, color 6s;
+        }
+
+        .transition-box-2:hover {
+            width: 300px;
+            background-color: seagreen;
+            color: #fff;
+        }
+
+
+        .transition-box-3 {
+            transition: all 2s;
+        }
+
+        .transition-box-3:hover {
+            width: 300px;
+            background-color: slateblue;
+            color: #fff;
+            border: 4px solid skyblue;
+        }
+
+        /* Transition timing function styles */
+        .box-2 {
+            transition: width 4s;
+        }
+
+        .box-2:hover {
+            width: 400px;
+        }
+
+        .ease {
+            transition-timing-function: ease;
+        }
+
+        .linear {
+            transition-timing-function: linear;
+        }
+
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        .cubic-bezier {
+            transition-timing-function: cubic-bezier(0.44, 0.35, 0, 1.1);
+        }
+
+        /* Transition-delay styles */
+        .delay-box {
+            transition: width 2s;
+            transition-delay: 2s;
+        }
+
+        .delay-box:hover {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transition</h1>
+    <div class="container">
+        <h2>1</h2>
+        <div class="transition-box-1 box">Sichqoncha olib borilganda kengligini ravon o'zgartiruvchi quti.</div>
+        <hr>
+
+        <h2>2</h2>
+        <div class="transition-box-2 box">Sichqoncha olib borilganda kechligi va rangini o'zgartiradigan quti.</div>
+        <hr>
+
+        <h2>3</h2>
+        <div class="transition-box-3 box">Sichqoncha olib borilganda barcha xossalarini bir xil vaqtda o'zgartiradigan
+            quti.</div>
+        <hr>
+        <hr>
+    </div>
+
+    <h1>Transition timing function</h1>
+    <div class="container">
+        <h2>Ease</h2>
+        <div class="ease box box-2">
+            Sekin boshlanib tezlashib sekin tugaydigan default transition.
+        </div>
+
+        <h2>Linear</h2>
+        <div class="linear box box-2">
+            Bir xil tezlikda davom etadigan transition.
+        </div>
+
+        <h2>Ease-in</h2>
+        <div class="ease-in box box-2">
+            Sekin boshlanib tezlashib sekin tugaydigan default transition.
+        </div>
+
+        <h2>Ease-out</h2>
+        <div class="ease-out box box-2">
+            Sekin boshlanib tezlashib sekin tugaydigan default transition.
+        </div>
+
+        <h2>cubic-bezier</h2>
+        <div class="cubic-bezier box box-2">
+            Sekin boshlanib tezlashib sekin tugaydigan default transition.
+        </div>
+    </div> <hr><hr>
+
+    <h1>Transition delay</h1>
+    <div class="delay-box box">Transition-delay orqali kechiktirilgan transition.</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+.blank-area {
+    height: 500px;
+}
+
+/* Part 1 styles of Form */
+.container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #F6D7B8;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+input[type=text], select, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 5px 0 20px;
+}
+
+.button {
+    background: linear-gradient(to right, blue 5%, red 55%, orange 100%);
+    background-size: 200% auto;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    left: 335px;
+}
+
+.button:hover {
+    background-position: right center;
+}
+
+/* Part 2 styles of Form */
+/* Radio buttons */
+/* Radio button uchun container */
+.container-2, .container-3 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-control__2 {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Brauzerning radio buttonini berkitish */
+.form-control__2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Maxsus radio button style */
+.custom-radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+/* Sichqoncha olib borilganda orqa fon o'zgarishi */
+.form-control__2:hover input ~ .custom-radio {
+    background-color: #ccc;
+}
+
+/* Radio button tanlaganda orqa fon ozgarishi */
+.form-control__2 input:checked ~ .custom-radio {
+    background-color: #2d846e;
+}
+
+/* Radio button tranlangini bildiradigan beldi yaratish */
+.custom-radio:after {
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Tanlangan paytda belgini ko'rsatish */
+.form-control__2 input:checked ~ .custom-radio:after {
+    display: block;
+}
+ 
+/* Checkboxes */
+/* Checkbox uchun container yaratish */
+.form-control__3 {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Brauzerning checkboxini berkitish */
+.form-control__3 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Maxsus chexboxga style berish */
+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+}   
+    
+/* Sichqoncha olib borilganda orqa fon o'zgarishi */
+.form-control__3:hover input ~ .custom-checkbox {
+    background-color: #ccc;
+}
+
+/* Checkbox tanlanganda orqa fon o'zgarishi */
+.form-control__3 input:checked ~ .custom-checkbox {
+    background-color: #2d846e;
+}
+
+/* Checkbox tanlangini bildiruvchi belgi yaratish */
+.custom-checkbox:after {
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    content: "";
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+/* Tanlangan paytda belgilarni ko'rsatish */
+.form-control__3 input:checked ~ .custom-checkbox:after {
+    display: block;
+}

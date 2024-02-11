@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display xossasi</title>
+    <style>
+        .to-inline-block {
+            background-color: silver;
+            width: 500px;
+            height: 200px;
+            display: inline-block;
+        }
+
+        .to-inline {
+            background-color: sandybrown;
+            display: inline;
+        }
+
+        .to-block {
+            background-color: darkgoldenrod;
+            display: block;
+        }
+
+        .to-none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elementlar ikki tur: block va inline elementlarga bo'linadi.
+    Bulardan inline elementlar heigh, width, padding, margin kabi xossalarga
+    ega bo'la olmaydi. Agar, inline elementlarga shunday xossalarni qo'llamoqchi
+    bo'lsak display xossasiga inline-block qiymatini berishimiz kerak. -->
+    
+    <!-- from inline to inline-block -->
+    <a href="#" class="to-inline-block">Inline elementni inline-blokka o'tkazish</a>
+    <!-- /from inline to inline-block -->
+    
+    <!-- from block to inline -->
+    <h2 class="to-inline">Block elementni inlinega o'tkazish</h2>
+    <!-- /from block to inline -->
+
+    <!-- from inline to block -->
+    <a href="#" class="to-block">Inline elementni blockga</a>
+    <!-- /from inline to block -->
+
+    <!-- display xossasining none qiymati elementni sahifada ko'rinmas
+    holatga keltirib beradi. -->
+    <h1 class="to-none">Elementni none qiymati orqali ko'rinmas holatga keltirish</h1>
+</body>
+</html>

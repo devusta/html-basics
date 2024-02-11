@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient va Filterlar</title>
+    <style>
+        /* Linear Gradient Styles */
+        .gradient-box {
+            width: 300px;
+            height: 200px;
+            background-image: linear-gradient(to right, yellow, red, blue);
+        }
+
+        /* Radial Gradient Styles */
+        .gradient-box2 {
+            width: 300px;
+            height: 500px;
+            background-image: radial-gradient(grey, green, orange);
+        }
+
+        /* Image styles */
+        img {
+            width: 300px;
+            margin: 5px;
+        }
+
+        .blur {
+            filter: blur(4px);
+        }
+
+        .brightness {
+            filter: brightness(0.3);
+        }
+
+        .contrast {
+            filter: contrast(0.3);
+        }
+
+        .grayscale {
+            filter: grayscale(0.8);
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(180deg)
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .opacity {
+            filter: opacity(50%);
+        }
+
+        .blank {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gradients</h1>
+    <h2>1. Linear Gradients</h2>
+    <div class="gradient-box"></div>
+    
+    <h2>2. Radial Gradients</h2>
+    <div class="gradient-box2"></div>
+
+    <h1>Filters</h1>
+    <img src="./images/image1.jpg" alt="image" class="original">
+    <img src="./images/image1.jpg" alt="image" class="blur">
+    <img src="./images/image1.jpg" alt="image" class="brightness">
+    <img src="./images/image1.jpg" alt="image" class="contrast">
+    <img src="./images/image1.jpg" alt="image" class="grayscale">
+    <img src="./images/image1.jpg" alt="image" class="hue-rotate">
+    <img src="./images/image1.jpg" alt="image" class="invert">
+    <img src="./images/image1.jpg" alt="image" class="opacity">
+    
+    <div class="blank"></div>
+</body>
+</html>

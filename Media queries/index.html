@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        /* .box-1 {
+            width: 500px;
+            height: 400px;
+            background-color: goldenrod;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .box-1 {
+                background-color: green;
+            }
+        } */
+
+        /* .box-2 {
+            width: 300px;
+            height: 400px;
+            background-color: goldenrod;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .box-2 {
+                background-color: green;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .box-2 {
+                background-color: blue;
+            }
+        } */
+
+        /* .box-3 {
+            width: 300px;
+            height: 400px;
+            background-color: goldenrod;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .box-3 {
+                background-color: blue;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .box-3 {
+                background-color: green;
+            }
+        } */
+
+        h1 {
+            font-size: 0.8rem;
+        }
+
+        @media only screen and (min-width: 390px) {
+            h1 {
+                font-size: 1rem;
+            }
+        }
+
+        @media only screen and (min-width: 420px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media only screen and (min-width: 1400px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- media so'rovlar har doim asosiy style kodlardan keyin kelishi kerak -->
+
+    <div class="box-1">
+        Kichik ekranda sariq, katta ekranda yashil rangga ega bo'ladigan quti
+    </div> <hr>
+
+    <div class="box-2">
+        600pxgacha sariq, 900pxgacha yashil va undan katta o'lchamlarda ko'k rangga kirivchi quti
+    </div> <hr>
+
+    <div class="box-3">
+        Katta ekranda sariq, kichik ekranda yashil rangga ega bo'ladiga quti
+    </div> <hr>
+
+    <h1>Ekran o'lchoviga qarab o'z o'lchamini o'zgartiruvchi sarlavha</h1>
+</body>
+</html>

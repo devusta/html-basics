@@ -1,0 +1,43 @@
+/* Background styles */
+.box-1 {
+    background-image: url(".//images/image1.jpg");
+    height: 1000px;
+    background-repeat: no-repeat; /*other values: repeat, repeat-x, repeat-y*/
+    background-size: auto; /*other values: cover, contain, o'lchovni ko'rsatish*/
+    background-position: right top; /*other values: right, left, top, bottom, center*/
+}
+
+/* Image syles */
+/* rounded images */
+.rounded-image, .circled-image,
+.thumbnail-image, .opacity-image {
+    width: 500px;
+    height: 500px;
+}
+
+.rounded-image {
+    border-radius: 24px;
+}
+
+.circled-image {
+    border-radius: 50%;
+}
+
+/* thumbnail images*/
+.thumbnail-image {
+    border: 1px solid silver;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* opacity images*/
+.opacity-image {
+    opacity: .4;
+}
+
+.opacity-image:hover {
+    opacity: 1;
+    border: 1px solid silver; 
+    border-radius: 5px;
+    padding: 12px;
+}

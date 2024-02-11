@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis, flex va align-self</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #025955;
+        }
+
+        .flex-item {
+            border-radius: 10px;
+            background-color: #fde8cd;
+            padding: 65px 15px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        /* Flex-basis style */
+        .flex-basis {
+            flex-basis: 300px;
+        }
+
+        /* Flex style */
+        .flex {
+            flex: 0 0 500px;
+        }
+
+        /* Align-self style */
+        .height {
+            height: 500px;
+            align-items: flex-start;
+        }
+
+        .align-self {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-basis, flex, align-self</h1>
+    <h2>1. Flex-basis</h2>
+    <!-- Flex-basis xossasi orqali flex-elementning boshlang'ich o'lchamini belgilash mumkin.  -->
+    <!-- <div class="flex-container">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item flex-basis">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div> -->
+
+    <h2>2. Flex</h2>
+    <!-- Flex xossasi Flex-grow, Flex-shrink va Flex-basis xossalarining jamlanmasi hisoblanadi.
+    Flex xossasi orqali yuqoridagi 3 ta xossa qiymatlarini bir qatorda yozish mumkin. -->
+    
+    <!-- <div class="flex-container">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item flex">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div> -->
+
+    <h2>3. Aling-self</h2>
+    <!-- Align-self xossasi orqali shu xossa berilgan flex-elementning flex-container
+    ichidagi joylashuvini belgilash mumkin. Qiymatlari: auto(default), stretch, 
+    center, flex-start, flex-end. -->
+
+    <div class="flex-container height">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item align-self">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+</body>
+</html>

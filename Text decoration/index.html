@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text decoration</title>
+    <style>
+        /* Matnni tagiga chizish */
+        .underline {
+            text-decoration: underline;
+        }
+
+        /* Matnni ustiga chizish */
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        /* Havolani tagida chiziqni olib tashlash */
+        .decoration-none {
+            text-decoration: none;
+        }
+
+        /* Elementning sichqoncha olib kelinganda o'zgarishi - hover */
+        .hover:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Ustiga sichqonchani bosib turganda o'zgarishi - active */
+        .active:active {
+            background-color: orange;
+            color: white;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <!-- Tect decoration -->
+    <h1>Text decoration</h1>
+
+    <h3 class="underline">1. Tagiga chizilgan matn</h3>
+    
+    <h3 class="line-through">2. Ustidsan chizilgan matn</h3>
+
+    <a href="#" class="decoration-none">3. Havolani tagidagi chiziq olib tashlangan</a>
+    
+    <!-- Psedo class -->
+    <h1>Psedo class</h1>
+
+    <h3 class="hover">1. Ustiga sichqonchani olib keling</h3>
+
+    <h3 class="active">2. Ustiga sichqonchani bosib turing</h3>
+
+</body>
+</html>

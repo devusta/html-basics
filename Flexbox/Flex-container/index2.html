@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-direction, flex-wrap, flex-flow va justify-content</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        /* Flex-direction style */
+        /* .flex-container-1 {
+            display: flex;
+            padding: 20px;
+            background-color: #025955;
+            border-radius: 10px;
+            flex-direction: row;
+        }
+
+        .flex-item {
+            padding: 60px 15px;
+            background-color: #fde8cd;
+            font-weight: bold;
+            margin: 10px;
+            border-radius: 10px;
+        } */
+
+        /* Flex-wrap style */
+        /* .flex-container-2 {
+            width: 40%;
+            display: flex;
+            padding: 20px;
+            background-color: #025955;
+            border-radius: 10px;
+            flex-wrap: wrap-reverse; 
+        }
+
+        .flex-item {
+            padding: 60px 15px;
+            background-color: #fde8cd;
+            font-weight: bold;
+            margin: 10px;
+            border-radius: 10px;
+        } */
+
+        /* Flex-flow style */
+        /* .flex-container-3 {
+            width: 40%;
+            display: flex;
+            padding: 20px;
+            background-color: #025955;
+            border-radius: 10px;
+            flex-flow: row wrap-reverse;
+        }
+
+        .flex-item {
+            padding: 60px 15px;
+            background-color: #fde8cd;
+            font-weight: bold;
+            margin: 10px;
+            border-radius: 10px;
+        } */
+
+        /* Justify-content style */
+        .flex-container-4 {
+            display: flex;
+            padding: 20px;
+            background-color: #025955;
+            border-radius: 10px;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+        }
+
+        .flex-item {
+            padding: 60px 15px;
+            background-color: #fde8cd;
+            font-weight: bold;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Flex direction</h1>
+    <!-- Flex-direction xossasi orqali flexbox elementlarning joylashish tartibini belgilash mumkin.
+    Flex-directin qiymatlari: row(default), row-reverse, column, column-reverse. -->
+    
+    <!-- <div class="flex-container-1">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div> -->
+
+    <h1>2. Flex wrap</h1>
+    <!-- Flex-wrap xossasi orqali flexbox elementlarining nechta qatorda joylashishini belgilash mumkin.
+    Flex-wrap qiymatlari: nowrap(defaul), wrap, wrap-reverse. -->
+    
+    <!-- <div class="flex-container-2">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+        <div class="flex-item">Flex item 4</div>
+        <div class="flex-item">Flex item 5</div>
+        <div class="flex-item">Flex item 6</div>
+        <div class="flex-item">Flex item 7</div>
+    </div> -->
+
+    <h1>3. Flex flow</h1>
+    <!-- Flex-flow xossasi orqali flex-direction va flex-wrap xossalarining qiymatlarini 
+        birdagina ko'rsatish mumkin. Flex-flowning qiymatlari flex-direction va 
+        flex-wrapning qiymatlari hisoblanadi. -->
+    
+    <!-- <div class="flex-container-3">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+        <div class="flex-item">Flex item 4</div>
+        <div class="flex-item">Flex item 5</div>
+        <div class="flex-item">Flex item 6</div>
+        <div class="flex-item">Flex item 7</div>
+    </div> -->
+
+    <h1>4. Justify content</h1>
+    <!-- Justify-content xossasi orqali flexbox elementlarining flexbox-containeri ichidagi o'zaro 
+        jolashuvini belgilash mumkin. Justify-content qiymatlari: flex-start, flex-end, center, space-between,
+    space-around, space-evenly. -->
+    <div class="flex-container-4">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+        <div class="flex-item">Flex item 4</div>
+        <div class="flex-item">Flex item 5</div>
+        <div class="flex-item">Flex item 6</div>
+        <div class="flex-item">Flex item 7</div>
+    </div>
+</body>
+</html>

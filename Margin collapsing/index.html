@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin collapsing</title>
+    <style>
+        .box-1 {
+            margin: 30px;
+        }
+
+        .box-2 {
+            margin: 20px;
+        }
+
+        .paragraph-1 {
+            max-height: 100px;
+            overflow: auto;
+            background-color: darkgray;
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1"><h1>Box 1</h1></div>
+    <div class="box-2"><h1>Box 2</h1></div>
+
+    <!-- max-height vs min height -->
+    <p class="paragraph-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+    <!-- /max-height vs min height -->
+    
+</body>
+</html>

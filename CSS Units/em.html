@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em o'lchov birligi</title>
+    <style>
+        /* .box-1 {
+            height: 600px;
+            width: 800px;
+            border: 1px solid red;
+            font-size: 20px;
+            border-radius: 0.5em; 
+            padding: 5em; 
+        } */
+       
+        /* .parent-box-2 {
+            font-size: 30px;
+        }
+
+        .box-2 {
+            height: 600px;
+            width: 1000px;
+            border: 1px solid red;
+            border-radius: 0.5em;
+            padding: 5em;
+        } */
+
+        /* .box-3 {
+            height: 600px;
+            width: 1000px;
+            border: 1px solid red;
+            border-radius: 0.5em;
+            padding: 5em;
+        } */
+
+        /* .parent-box-4 {
+            font-size: 30px;
+        }
+
+        .child-box-4 {
+            font-size: 2em;
+        }
+
+        .box-4 {
+            height: 600px;
+            width: 1000px;
+            border: 1px solid red;
+            border-radius: 0.5em;
+            padding: 5em;
+        } */
+
+        .container {
+            font-size: 40px;
+            padding: 1em;
+            border: 1px solid red;
+        }
+
+        .container h2 {
+            font-size: 1.5em;
+            margin-bottom: 0.2em;
+        }
+        
+        .container h6 {
+            font-size: 0.9em;
+            margin-top: 0.2em;
+        }
+
+        .container p {
+            font-size: 0.8em;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Elementlarga em o'lchovi berilganda berilgan qiymat o'sha element yoki ajdodining(eng yaqinidan boshlab)
+    fon-size xossasi qiymatiga nisbatan belgilanadi.  -->
+    <div class="box-1">em o'lchov birligi uchun misollar</div> <hr>
+
+    <div class="parent-box-2">
+        <div class="box-2">font-size xossasiga ega bo'lmagan holatda</div>
+    </div> <hr>
+
+    <!-- Agar element va uning hech qaysi ajdodi font-size xossasiga ega bo'lmasa, unga berilgan em o'lchov
+    qitmatlari brauzerning default font-size(asosan 16px) qiymatiga nisbatan balgilanadi.   -->
+    <div class="parent-box-3">
+        <div class="box-3">hech qaysi element font-size xossasiga ega bo'lmagan holatda</div>
+    </div> <hr>
+
+    <div class="parent-box-4">
+        <div class="child-box-4">
+            <div class="box-4">Elementlar nested holatda joylashganda</div>
+        </div>
+    </div> <hr>
+
+
+    <!-- O'lchov birliklari orasida em ning qulayligi shundaki, faqatgina ajdodga berilgan px o'lchovini
+    o'zgartirish orqali uning ichidagi barcha elemantlar o'lchovini o'zgartira olamiz. -->
+    <div class="container">
+        <h2>Sarlavha</h2>
+        <h6>Sarlavha osti</h6>
+        <p>Elementlarga em o'lchovi berilganda berilgan qiymat o'sha element yoki ajdodining(eng yaqinidan boshlab)
+            fon-size xossasi qiymatiga nisbatan belgilanadi.</p>
+    </div>
+
+</body>
+</html>
